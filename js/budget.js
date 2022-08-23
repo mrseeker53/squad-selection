@@ -1,7 +1,4 @@
 // Player Expenses
-const playerExpenses = function (event, param) {
-
-}
 document.getElementById('btn-calculate').addEventListener('click', function (event, param) {
     const perPlayerCost = getInputFieldValueById('player-cost');
 
