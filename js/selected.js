@@ -1,5 +1,6 @@
 const selectedPlayerList = [];
 
+// Display the selected players in ordered list
 function displayPlayerName(player) {
     const playerList = document.getElementById('selected-players');
     playerList.innerText = '';
@@ -8,7 +9,8 @@ function displayPlayerName(player) {
         const name = selectedPlayerList[i].playerName;
 
         const ol = document.createElement('li');
-        if(ol === 12) {
+        // Display an alert message
+        if (selectedPlayerList.length === 12) {
             return alert("You have already selected eleven players, no more selection !!!")
         }
         ol.innerText = name;
@@ -17,6 +19,7 @@ function displayPlayerName(player) {
     }
 }
 
+// Select Players and push in array
 function selectPlayer(element) {
     const playerName = element.parentNode.children[0].innerText;
     const playerObj = {
@@ -27,3 +30,8 @@ function selectPlayer(element) {
     displayPlayerName(selectedPlayerList);
 }
 
+// Selected Players list length
+function arrayLength() {
+    const selectedLength = selectedPlayerList.length;
+    return selectedLength;
+}

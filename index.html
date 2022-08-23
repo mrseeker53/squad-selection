@@ -186,21 +186,26 @@
                         <hr class="border border-warning border-2 opacity-100">
                         <div class="row row-cols-2">
                             <span class="fw-bolder">Per Player</span>
-                            <input type="text">
+                            <input id="player-cost" type="text">
                         </div>
-                        <button class="btn btn-success d-grid col-12 mx-auto my-3">Calculate</button>
-                        <p class="fw-bolder">Player Expenses: $<span>00</span></p>
+                        <button id="btn-calculate" class="btn btn-success d-grid col-12 mx-auto my-3">Calculate</button>
+                        <p class="fw-bolder">Player Expenses: $
+                            <span id="total-player-cost">00</span>
+                        </p>
                         <!-- Total Expenses -->
                         <div class="row row-cols-2">
-                            <span class="fw-bolder">Manager</span>
+                            <span id="manager-cost" class="fw-bolder">Manager</span>
                             <input type="text">
                         </div>
                         <div class="row row-cols-2 my-3">
-                            <span class="fw-bolder">Coach</span>
+                            <span id="coach-cost" class="fw-bolder">Coach</span>
                             <input type="text">
                         </div>
-                        <button class="btn btn-success d-grid col-12 mx-auto">Calculate Total</button>
-                        <p class="fw-bolder my-3">Total Expenses: $<span>00</span></p>
+                        <button id="btn-calculate-total" class="btn btn-success d-grid col-12 mx-auto">Calculate
+                            Total</button>
+                        <p class="fw-bolder my-3">Total Expenses: $
+                            <span id="total-cost">00</span>
+                        </p>
                     </div>
                 </div>
             </div>
