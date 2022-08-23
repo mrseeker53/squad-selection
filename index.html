@@ -43,7 +43,8 @@
                                 <img src="images/aaron-finch.png" class="card-img-top h-75" alt="Aaron Finch">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Aaron Finch</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success"
+                                        onclick="selectPlayer(this); this.disabled = true;">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +54,7 @@
                                 <img src="images/david-warner.png" class="card-img-top h-75" alt="David Warner">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">David Warner</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +64,7 @@
                                 <img src="images/glenn-maxwell.png" class="card-img-top h-75" alt="Glenn Maxwell">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Glenn Maxwell</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +74,7 @@
                                 <img src="images/mitchell-marsh.png" class="card-img-top h-75" alt="Mitchell Marsh">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Mitchell Marsh</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +84,7 @@
                                 <img src="images/steve-smith.png" class="card-img-top h-75" alt="Steve Smith">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Steve Smith</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +94,7 @@
                                 <img src="images/matthew-wade.png" class="card-img-top h-75" alt="Matthew Wade">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Matthew Wade</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +104,7 @@
                                 <img src="images/pat-cummins.png" class="card-img-top h-75" alt="Pat Cummins">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Pat Cummins</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +114,7 @@
                                 <img src="images/mitchell-starc.png" class="card-img-top h-75" alt="Mitchell Starc">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Mitchell Starc</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +124,7 @@
                                 <img src="images/josh-hazlewood.png" class="card-img-top h-75" alt="Josh Hazlewood">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Josh Hazlewood</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +134,7 @@
                                 <img src="images/adam-zampa.png" class="card-img-top h-75" alt="Adam Zampa">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Adam Zampa</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +144,7 @@
                                 <img src="images/josh-inglis.png" class="card-img-top h-75" alt="Josh Inglis">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Josh Inglis</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +154,7 @@
                                 <img src="images/marcus-stoinis.png" class="card-img-top h-75" alt="Marcus Stoinis">
                                 <div class="card-body d-grid col-10 mx-auto">
                                     <h4 class="card-title text-center">Marcus Stoinis</h4>
-                                    <button class="btn btn-success">SELECT</button>
+                                    <button class="btn btn-success" onclick="selectPlayer(this)">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -165,11 +166,7 @@
                     <div class="ms-5 mt-3 mb-5">
                         <h4 class="text-success text-center">Selected - XI</h4>
                         <hr class="border border-warning border-2 opacity-100">
-                        <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ol>
+                        <ol id="selected-players" class="text-success fw-bolder"></ol>
                     </div>
                     <!-- ---------------- Budget ---------------- -->
                     <div class="ms-5">
@@ -184,11 +181,11 @@
                         <p class="fw-bolder">Player Expenses: $<span>00</span></p>
                         <!-- Total Expenses -->
                         <div class="row row-cols-2">
-                            <span class="fw-bolder">Per Player</span>
+                            <span class="fw-bolder">Manager</span>
                             <input type="text">
                         </div>
                         <div class="row row-cols-2 my-3">
-                            <span class="fw-bolder">Per Player</span>
+                            <span class="fw-bolder">Coach</span>
                             <input type="text">
                         </div>
                         <button class="btn btn-success d-grid col-12 mx-auto">Calculate Total</button>
